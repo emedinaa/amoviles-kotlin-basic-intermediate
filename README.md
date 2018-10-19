@@ -416,11 +416,13 @@ item : 4
 
 * KotlinSamples - Contiene los ejemplos sobre el lenguaje Kotlin (IntelliJ IDEA)
 * BasicSamples - Contiene ejemplos básicos de Android con Kotlin (Android Studio)
+    * GalleryActivity
+    * FormActivity
+    * CalculatorActivity
 
 # Homework
 
 **Android Studio**
-
 Crear un proyecto en Android Studio , luego realizar los cambios acorde al template entregado en clase (gradle).
   
 # References 
