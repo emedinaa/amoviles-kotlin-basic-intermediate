@@ -30,13 +30,25 @@ Item | Tema
 
 Item | Sección | Contenido
 ------------ | ------------- | -------------
-1 | Kotlin para desarrolladores Android | - Fundamentos del lenguaje - OOP - Comparación con Java - Funciones y Lambdas
-2 | Fundamentals | Android Components - Activity, Services, Broadcast Receiver, Content Providers
-3 | Android Studio | Gradle - Android Studio - Crear un proyecto Android con Kotlin
-4 | Interfaz de Usuario | Layout y Widgets - User Events - Componentes Android con Kotlin
-5 | RecyclerView y Adapters | Basic Adapters - Custom Adapters - Seguridad ante Nulls - Data Class
-6 | Fragments | Fundamentos - Fragments - Interoperabilidad con Java
-
+1 | Kotlin para desarrolladores Android | - Fundamentos del lenguaje 
+- OOP 
+- Comparación con Java 
+- Funciones y Lambdas
+2 | Fundamentals | - Android Components
+ - Activity, Services, Broadcast Receiver, Content Providers
+3 | Android Studio | - Gradle 
+- Android Studio 
+- Crear un proyecto Android con Kotlin
+4 | Interfaz de Usuario | - Layout y Widgets 
+- User Events 
+- Componentes Android con Kotlin
+5 | RecyclerView y Adapters | - Basic Adapters 
+- Custom Adapters 
+- Seguridad ante Nulls 
+- Data Class
+6 | Fragments | - Fundamentos 
+- Fragments 
+- Interoperabilidad con Java
 
 # Referencias 
 
