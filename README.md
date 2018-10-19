@@ -8,34 +8,71 @@ emedinaa@gmail.com
 
 https://github.com/emedinaa
 
-# Temario
+# Kotlin Language
 
-- Sobre Kotlin
+- Hello World
 
-Item | Tema
------------- | -------------
-1 | Fundamentos del lenguaje
-2 | Comparación con Java
-3 | Funciones y Lambdas
-4 | Seguridad ante Nulls
-5 | Data Class
-6 | Crear un proyecto Android con Kotlin
-7 | Componentes Android con Kotlin
-8 | Interoperabilidad con Java
-9 | Kotlin/Android extensions
-10 | Patrones con Kotlin
-11 | Anko Library
+```kotlin
+fun main(args:Array<String>){
+    println("Hello Kotlin !")
+}
+```
 
-- Android con Kotlin / Nivel Básico Intermedio
+output
+```
+Hello Kotlin !
+```
 
-Item | Sección | Contenido
------------- | ------------- | -------------
-1 | Kotlin para desarrolladores Android | - Fundamentos del lenguaje - OOP - Comparación con Java - Funciones y Lambdas
-2 | Fundamentals | - Android Components - Activity, Services, Broadcast Receiver, Content Providers
-3 | Android Studio | - Gradle - Android Studio - Crear un proyecto Android con Kotlin
-4 | Interfaz de Usuario | - Layout y Widgets - User Events - Componentes Android con Kotlin
-5 | RecyclerView y Adapters | - Basic Adapters - Custom Adapters - Seguridad ante Nulls - Data Class
-6 | Fragments | - Fundamentos - Fragments - Interoperabilidad con Java
+- Functions
+
+```kotlin
+fun showMessage(message: String): Unit {                               // 1
+    println(message)
+}
+```
+
+```kotlin
+fun showMessage2(message: String){
+    println(message)
+}
+```
+
+```kotlin
+fun showMessage(message:String, param:String="Parameter"){
+    println("message : $message param : $param")
+}
+```
+
+```kotlin
+fun area(base:Int, height:Int):Int{
+    return base*height
+}
+```
+
+```kotlin
+fun perimeter(base:Int, height:Int)=2*base+ 2*height
+```
+
+```kotlin
+fun main(args:Array<String>){
+    showMessage("Hello Kotlin") //1
+    showMessage2("Hello Kotlin") //2
+    showMessage("Hello Kotlin","Leave Java")//3
+    println(area(10,20)) //4
+    println(perimeter(10,20)) //5
+
+}
+```
+
+output
+```
+Hello Kotlin
+Hello Kotlin
+message : Hello Kotlin param : Leave Java
+200
+60
+```
+
 
 # References 
 
