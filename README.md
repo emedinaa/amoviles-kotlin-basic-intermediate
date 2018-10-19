@@ -37,9 +37,6 @@ Item | Sección | Contenido
 5 | RecyclerView y Adapters | - Basic Adapters - Custom Adapters - Seguridad ante Nulls - Data Class
 6 | Fragments | - Fundamentos - Fragments - Interoperabilidad con Java
 
-# Referencias 
+# References 
 
-- Kotlin programming language https://kotlinlang.org/
-- Develop Android apps with Kotlin https://developer.android.com/kotlin/
-- Kotlin offical documentation https://kotlinlang.org/docs/reference/
-- CodeLabs https://codelabs.developers.google.com/
+- Getting Started with IntelliJ IDEA https://kotlinlang.org/docs/tutorials/getting-started.html
