@@ -211,6 +211,90 @@ Not null length (let) :24
 
 ```
 
+- Classes
+
+```kotlin
+
+class Language()
+
+class JVMLanguage(val id:Int, val name:String)
+
+class JavaLanguage(val id:Int , var nullable:Boolean)
+
+fun main(args:Array<String>) {
+    println("Classes!")
+
+    val language= Language()
+    println("language $language")
+
+    val jvmLanguage= JVMLanguage(0,"Kotlin")
+
+    println("jvmLanguage $jvmLanguage")
+    println("jvmLanguage ${jvmLanguage.id}  & ${jvmLanguage.name}")
+
+    //jvmLanguage.id=1
+    //jvmLanguage.name="Java"
+
+    val javaLanguage= JavaLanguage(1,false)
+    println("javaLanguage ${javaLanguage.id}  & ${javaLanguage.nullable}")
+    javaLanguage.nullable=true
+
+    println("javaLanguage ${javaLanguage.id}  & ${javaLanguage.nullable}")
+
+}
+```
+
+output
+```
+Classes!
+language Language@5e2de80c
+jvmLanguage JVMLanguage@1d44bcfa
+jvmLanguage 0  & Kotlin
+javaLanguage 1  & false
+javaLanguage 1  & true
+```
+
+- Inheritance
+
+```kotlin
+open class ObsoleteLanguage(){
+    open fun sayHello() {       // 2
+        println("I'm bored...")
+    }
+}
+
+open class AwesomeLanguage(val message:String){
+    open fun showMessage(){
+        println(message)
+    }
+}
+
+
+class JavaOLanguage:ObsoleteLanguage(){
+    override fun sayHello() {
+        println("I'm an obsolete language")
+    }
+}
+
+class KotlinAwesomeLanguage(message:String):AwesomeLanguage(message)
+
+fun main(args:Array<String>) {
+    val obsoleteLanguage: ObsoleteLanguage = JavaOLanguage()
+    obsoleteLanguage.sayHello()
+
+    val awesomeLanguage:AwesomeLanguage= KotlinAwesomeLanguage("Kotlin is a cool language!")
+    awesomeLanguage.showMessage()
+}
+```
+
+output
+```
+I'm an obsolete language
+Kotlin is a cool language!
+```
+
+
+
 # References 
 
 - Getting Started with IntelliJ IDEA https://kotlinlang.org/docs/tutorials/getting-started.html
