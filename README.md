@@ -8,7 +8,7 @@ emedinaa@gmail.com
 
 https://github.com/emedinaa
 
-# Kotlin Language
+## Kotlin Language
 
 - Hello World
 
@@ -296,7 +296,7 @@ Kotlin is a cool language!
 
 - Control Flow
 
-**Conditional expression*
+**Conditional expression**
 
 ```kotlin
 fun max(a: Int, b: Int) = if (a > b) a else b         // 1
@@ -396,7 +396,27 @@ item : 2
 item : 3
 item : 4
 ```
+---
 
+## Crear un proyecto Android con Kotlin
+
+* Actividades
+
+  * Crear un proyecto Android
+  * Crear un proyecto Android usando un template
+  * Crear una actividad llamada HomeActivity
+  * Crear un fragment llamado FragmentActivity
+  * Crear una clase java llamada User en src/main/package/model/User.java
+  * Agregar un color en res/values/colors.xml
+  * Agregar un string en res/values/strings.xml
+  * Agregar una dimension en res/values/dimens.xml
+  * Agregar una imagen en res/drawable/ic_android.png
+
+# Homework
+
+**Android Studio**
+Crear un proyecto en Android Studio , luego realizar los cambios acorde al template entregado en clase (gradle).
+  
 # References 
 
 - Getting Started with IntelliJ IDEA https://kotlinlang.org/docs/tutorials/getting-started.html
