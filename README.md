@@ -412,11 +412,19 @@ item : 4
   * Agregar una dimension en res/values/dimens.xml
   * Agregar una imagen en res/drawable/ic_android.png
 
+# Samples
+
+* KotlinSamples - Contiene los ejemplos sobre el lenguaje Kotlin (IntelliJ IDEA)
+* BasicSamples - Contiene ejemplos básicos de Android con Kotlin (Android Studio)
+
 # Homework
 
 **Android Studio**
+
 Crear un proyecto en Android Studio , luego realizar los cambios acorde al template entregado en clase (gradle).
   
 # References 
 
 - Getting Started with IntelliJ IDEA https://kotlinlang.org/docs/tutorials/getting-started.html
+- Develop Android Apps with Kotlin https://developer.android.com/kotlin/
+- Getting started with Android and Kotlin https://kotlinlang.org/docs/tutorials/kotlin-android.html
