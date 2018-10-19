@@ -400,6 +400,116 @@ item : 4
 
 ## Crear un proyecto Android con Kotlin
 
+* Estructura de un proyecto Android
+
+ *Revisar el proyecto que se encuentra en la carpeta temmplate/KotlinApp*
+ 
+ ```
+    KotlinApp
+        - build.gradle
+        - app
+            - build
+            - libs
+            - build.gradle
+            - src
+        - build
+        - gradle
+ ```  
+ 
+    * Revisar el archivo **build.gradle** del proyecto
+```groovy
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    ext.kotlin_version = '1.2.61'
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.1.4'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+ext {
+    // Sdk and tools
+    minSdkVersion = 15
+    targetSdkVersion = 28
+    compileSdkVersion = 28
+    buildToolsVersion = '28.0.0'
+    constraintLayoutVersion='1.1.3'
+
+    // App dependencies
+    supportLibraryVersion = '28.0.0'
+    junitVersion = '4.12'
+
+    //Test
+    runnerVersion='1.0.2'
+    espressoVersion='3.0.2'
+}
+```
+    * Revisar el archivo **build.gradle** de la app 
+    
+```groovy
+apply plugin: 'com.android.application'
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion//28
+    defaultConfig {
+        applicationId "com.kotlin.samples.kotlinapp"
+        minSdkVersion rootProject.ext.minSdkVersion//15
+        targetSdkVersion rootProject.ext.targetSdkVersion//28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    sourceSets {
+        main.java.srcDirs += 'src/main/kotlin'
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation "com.android.support:appcompat-v7:$rootProject.supportLibraryVersion"
+    implementation "com.android.support:recyclerview-v7:$rootProject.supportLibraryVersion"
+    implementation "com.android.support:cardview-v7:$rootProject.supportLibraryVersion"
+    implementation "com.android.support.constraint:constraint-layout:$rootProject.constraintLayoutVersion"
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    testImplementation "junit:junit:$rootProject.junitVersion"
+    androidTestImplementation "com.android.support.test:runner:$rootProject.runnerVersion"
+    androidTestImplementation "com.android.support.test.espresso:espresso-core:$rootProject.espressoVersion"
+}
+
+```
+ 
 * Actividades
 
   * Crear un proyecto Android
@@ -423,6 +533,7 @@ item : 4
 # Homework
 
 **Android Studio**
+
 Crear un proyecto en Android Studio , luego realizar los cambios acorde al template entregado en clase (gradle).
   
 # References 
