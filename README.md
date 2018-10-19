@@ -416,7 +416,7 @@ item : 4
         - gradle
  ```  
  
-    * Revisar el archivo **build.gradle** del proyecto
+* Revisar el archivo **build.gradle** del proyecto
 ```groovy
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 
@@ -463,7 +463,7 @@ ext {
     espressoVersion='3.0.2'
 }
 ```
-    * Revisar el archivo **build.gradle** de la app 
+* Revisar el archivo **build.gradle** de la app 
     
 ```groovy
 apply plugin: 'com.android.application'
