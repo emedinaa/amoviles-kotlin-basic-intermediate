@@ -29,7 +29,7 @@ Item | Tema
 - Android con Kotlin / Nivel Básico Intermedio
 
 Item | Sección | Contenido
------------- | -------------
+------------ | ------------- | -------------
 1 | Kotlin para desarrolladores Android | - Fundamentos del lenguaje - OOP - Comparación con Java - Funciones y Lambdas
 2 | Fundamentals | Android Components - Activity, Services, Broadcast Receiver, Content Providers
 3 | Android Studio | Gradle - Android Studio - Crear un proyecto Android con Kotlin
