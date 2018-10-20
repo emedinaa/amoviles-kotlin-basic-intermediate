@@ -566,7 +566,7 @@ class EmptyActivity : AppCompatActivity() {
 </android.support.constraint.ConstraintLayout>
 ```
 
-<img src="d-pe/training-resources/blob/master/kotlin/activity_empty.png"/>
+<img src="https://raw.githubusercontent.com/learning-android-pe/training-resources/master/kotlin/activity_empty.png"/>
 
 * Actividades
 
