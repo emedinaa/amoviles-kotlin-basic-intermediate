@@ -82,6 +82,14 @@ message : Hello Kotlin param : Leave Java
 - Functions / vararg parameters
 
 ```kotlin
+fun printWithArgs(vararg languages:String){
+    for(item in languages){
+        println(item)
+    }
+}
+```
+
+```kotlin
    printWithArgs("Java", "Kotlin", "Scala", "Groovy",
             "Clojure")
    printWithArgs("Java", "Kotlin", "C++", param = "Android")
