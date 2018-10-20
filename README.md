@@ -566,6 +566,8 @@ class EmptyActivity : AppCompatActivity() {
 </android.support.constraint.ConstraintLayout>
 ```
 
+<img src="d-pe/training-resources/blob/master/kotlin/activity_empty.png"/>
+
 * Actividades
 
   * Crear un proyecto Android
