@@ -1,4 +1,4 @@
-# Lesson 1
+# Lesson 1 - Saturday, October 20
 Curso de Aplicaciones Android con Kotlin (Básico - Intermedio) - Academia Móviles
 
 * Kotlin para desarrolladores Android
