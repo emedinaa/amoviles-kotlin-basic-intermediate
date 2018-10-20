@@ -1,12 +1,14 @@
-# amoviles-kotlin-basic-intermediate
+# Lesson 1
 Curso de Aplicaciones Android con Kotlin (Básico - Intermedio) - Academia Móviles
 
-# Instructor
-Eduardo José Medina Alfaro
-
-emedinaa@gmail.com
-
-https://github.com/emedinaa
+* Kotlin para desarrolladores Android
+    * Fundamentos del lenguaje
+    * Programación Orientado a Objectos (OOP)
+    * Comparación con Java
+    * Funciones y Lambdas
+    
+* Entorno de desarrollo (Android Studio)
+    * Crear un proyecto Android con Kotlin
 
 ## Kotlin Fundamentals
 
