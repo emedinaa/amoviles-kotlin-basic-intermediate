@@ -8,6 +8,10 @@ emedinaa@gmail.com
 
 https://github.com/emedinaa
 
+## Kotlin Fundamentals
+
+Slide https://docs.google.com/presentation/d/1AsYR8CfSQprW0SP5S-19kuREeD88_F8yB-quibEo3DM/edit?usp=sharing
+
 ## Kotlin Language
 
 - Hello World
