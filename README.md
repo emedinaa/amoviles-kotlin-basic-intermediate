@@ -516,6 +516,58 @@ dependencies {
 
 ```
  
+ * Creamos una actividad llamada EmptyActivity
+ 
+ ```kotlin
+ package com.kotlin.samples.kotlinapp
+
+import android.os.Bundle
+import android.support.v7.app.AppCompatActivity
+import android.widget.Toast
+import kotlinx.android.synthetic.main.activity_empty.*
+
+class EmptyActivity : AppCompatActivity() {
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_empty)
+
+        imageView.setOnClickListener {
+            showMessage()
+        }
+    }
+
+    private fun showMessage(){
+        Toast.makeText(this, "Hello Kotlin!", Toast.LENGTH_LONG).show()
+    }
+}
+
+ ```
+* En su layout "activity_empty.xml" copiamos los siguiente
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EmptyActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_kotlin_android"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>
+```
+
+<img src="https://raw.githubusercontent.com/learning-android-pe/training-resources/master/kotlin/activity_empty.png"/>
+
 * Actividades
 
   * Crear un proyecto Android
