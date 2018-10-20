@@ -610,5 +610,6 @@ Crear un proyecto en Android Studio , luego realizar los cambios acorde al templ
 - Android Developers https://developer.android.com/?hl=es-419
 - Google codelabs https://codelabs.developers.google.com/
 - Android Studio https://developer.android.com/studio/install
+- Genymotion https://www.genymotion.com/account/create/
 
 
