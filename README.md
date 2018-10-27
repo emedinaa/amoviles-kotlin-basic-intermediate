@@ -21,6 +21,7 @@ Compilador online https://play.kotlinlang.org/
 
 - Ejercicios
 
+  - Pide 2 números y muestra cual es el mayor, el menor, o si son iguales
   - Calcular el mayor de 2 números
   - Calcular el factorial de un número.
   - Dado 10 números , calcular el mayor y menor
@@ -30,8 +31,30 @@ Compilador online https://play.kotlinlang.org/
 primos. 
   - Calcular el mayor de tres números enteros
   - Pide un número y muestra si es positivo o negativo y si es par o impar
-  - Pide 2 números y muestra cual es el mayor, el menor, o si son iguales
   - Obtener el valor máximo y mínimo de un array de valores.
+
+```kotlin
+ //Pide 2 números y muestra cual es el mayor, el menor, o si son iguales
+ 
+fun main(args:Array<String>){
+    println("Hello Kotlin !")
+    val num1= 5
+    val num2= 3
+    comparar(num1,num2)
+}
+fun comparar(v1:Int, v2:Int){
+    var message:String=""
+    if(v1>v2){
+        message= "v1 $v1 > v2 $v2" //
+    }else if(v1<v2){
+       message= "v1 $v1 < v2 $v2"  
+    }else{
+        message= "v1 $v1 = v2 $v2"  
+    }
+    println(message)
+}
+
+```
 
 # Componentes de una aplicación Android
 
