@@ -1,45 +1,26 @@
 # amoviles-kotlin-basic-intermediate
+Lesson 2 - Saturday, October 27
+
 Curso de Aplicaciones Android con Kotlin (Básico - Intermedio) - Academia Móviles
 
-# Instructor
-Eduardo José Medina Alfaro
+# Componentes de una aplicación Android
 
-emedinaa@gmail.com
+- Entorno de desarrollo (Android Studio)
+- Activities
+- Intents
 
-https://github.com/emedinaa
+# Homework
 
-# Temario
+**Android Studio**
 
-- Sobre Kotlin
+Crear un proyecto en Android Studio , luego realizar los cambios acorde al template entregado en clase (gradle).
+  
+# References 
 
-Item | Tema
------------- | -------------
-1 | Fundamentos del lenguaje
-2 | Comparación con Java
-3 | Funciones y Lambdas
-4 | Seguridad ante Nulls
-5 | Data Class
-6 | Crear un proyecto Android con Kotlin
-7 | Componentes Android con Kotlin
-8 | Interoperabilidad con Java
-9 | Kotlin/Android extensions
-10 | Patrones con Kotlin
-11 | Anko Library
-
-- Android con Kotlin / Nivel Básico Intermedio
-
-Item | Sección | Contenido
------------- | ------------- | -------------
-1 | Kotlin para desarrolladores Android | - Fundamentos del lenguaje - OOP - Comparación con Java - Funciones y Lambdas
-2 | Fundamentals | - Android Components - Activity, Services, Broadcast Receiver, Content Providers
-3 | Android Studio | - Gradle - Android Studio - Crear un proyecto Android con Kotlin
-4 | Interfaz de Usuario | - Layout y Widgets - User Events - Componentes Android con Kotlin
-5 | RecyclerView y Adapters | - Basic Adapters - Custom Adapters - Seguridad ante Nulls - Data Class
-6 | Fragments | - Fundamentos - Fragments - Interoperabilidad con Java
-
-# Referencias 
-
-- Kotlin programming language https://kotlinlang.org/
-- Develop Android apps with Kotlin https://developer.android.com/kotlin/
-- Kotlin offical documentation https://kotlinlang.org/docs/reference/
-- CodeLabs https://codelabs.developers.google.com/
+- Getting Started with IntelliJ IDEA https://kotlinlang.org/docs/tutorials/getting-started.html
+- Develop Android Apps with Kotlin https://developer.android.com/kotlin/
+- Getting started with Android and Kotlin https://kotlinlang.org/docs/tutorials/kotlin-android.html
+- Android Developers https://developer.android.com/?hl=es-419
+- Google codelabs https://codelabs.developers.google.com/
+- Android Studio https://developer.android.com/studio/install
+- Genymotion https://www.genymotion.com/account/create/
