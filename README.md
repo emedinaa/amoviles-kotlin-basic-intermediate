@@ -77,6 +77,31 @@ fun main(args:Array<String>){
 
 ```
 
+```kotlin
+//Obtener el valor máximo y mínimo de un array de valores.
+fun main(args:Array<String>){
+    //Obtener el valor máximo y mínimo de un array de valores //[3,5,2,1,7,8] max , min
+    println( "Hello kotlin")
+    val arr= intArrayOf(3,5,2,1,7,8)
+    calcular(arr)
+}
+
+fun calcular(arr:IntArray){
+    var max=arr[0]
+    var min=arr[0]
+    // min > it min= it
+    arr.forEach{//i->
+        println("it $it - min :$min - max : $max")
+        if(min>it){ min=it }
+        if(max<it){ max= it}
+        println("nuevo min :$min / nuevo max : $max")
+    }
+    println(" min : $min - max : $max") //[3,5,2,1,7,8]
+}
+
+```
+
+
 # Componentes de una aplicación Android
 
 - Entorno de desarrollo (Android Studio)
