@@ -39,7 +39,7 @@ class MainActivity : AppCompatActivity() {
         view.setImageResource(R.mipmap.img_kotlin)
         view.layoutParams= layoutParams
         //animateView(view)
-        //animateView2(view)
+        animateView2(view)
         frameLayout.addView(view)
     }
 
