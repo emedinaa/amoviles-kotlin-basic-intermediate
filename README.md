@@ -120,3 +120,5 @@ fun calcular(arr:IntArray){
 - Google codelabs https://codelabs.developers.google.com/
 - Android Studio https://developer.android.com/studio/install
 - Genymotion https://www.genymotion.com/account/create/
+- Android Samples https://developer.android.com/samples/
+
