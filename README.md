@@ -56,6 +56,27 @@ fun comparar(v1:Int, v2:Int){
 
 ```
 
+```kotlin
+//Calcular el factorial de un número.
+fun main(args:Array<String>){
+    println("Hello Kotlin !")
+    //factorial 5 5x4x3x2x1 5*(5-1)*(5-2)*(5-3)*(5-4)
+   	val num=5
+    var factorial= 5
+    for(i in 1..(num-1)){// for(val i=1, i<5,i++){
+        //factorial = num*(num-i) 
+        factorial = factorial*(num-i) 
+        println( "$num x ($num - $i) = $num x ${num-i} factorial $factorial")
+    }
+    println( "factorial $factorial")
+        //1 5*(5-1)
+        //2 5*(5-2)
+        //3 5*(5-3)
+        //4 5* ()5-4)
+}
+
+```
+
 # Componentes de una aplicación Android
 
 - Entorno de desarrollo (Android Studio)
