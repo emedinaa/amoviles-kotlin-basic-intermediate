@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">UISamples</string>
+
+    <string name="contenido">Lorem Ipsum is simply dummy Lorem Ipsum is simply dummy Lorem Ipsum is simply dummyLorem Ipsum is simply dummy Lorem Ipsum is simply dummy Lorem Ipsum is simply dummy Lorem Ipsum is simply dummy Lorem Ipsum is simply dummy Lorem Ipsum is simply dummy Lorem Ipsum is simply dummy Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</string>
+    <string name="email_address">Email address</string>
+    <string name="password">Password</string>
+    <string name="log_in">Log In</string>
+    <string name="or_log_in_using">or log in using</string>
+    <string name="facebook">Facebook</string>
+    <string name="twitter">Twitter</string>
+    <string name="sign_in_tw">Sign in with twitter</string>
+    <string name="sign_up_email">Sign up with</string>
+    <string name="email">Email</string>
+    <string name="already_hace_an">Already have an account?</string>
+    <string name="sign_in_now">Sign in now</string>
+    <string name="done">Done</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="username">Username</string>
+    <string name="sign_in">Sign in</string>
+</resources>

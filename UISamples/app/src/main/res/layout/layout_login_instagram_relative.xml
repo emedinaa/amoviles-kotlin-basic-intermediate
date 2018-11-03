@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:padding="8dp">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="180dp"
+        android:adjustViewBounds="true"
+        app:srcCompat="@drawable/ic_instagram_logo"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/editText5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:background="@color/white"
+        android:padding="6dp"
+        android:layout_marginBottom="6dp"
+        android:hint="@string/username"
+        android:layout_below="@+id/imageView2"/>
+
+    <EditText
+        android:id="@+id/editText6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/password"
+        android:background="@color/white"
+        android:padding="6dp"
+        android:layout_marginBottom="14dp"
+        android:inputType="textPassword"
+        android:layout_below="@+id/editText5"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:background="@color/green"
+        android:text="@string/sign_in"
+        android:layout_below="@+id/editText6"/>
+
+    <!--<Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/green"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+        tools:visibility="visible"/>-->
+</RelativeLayout>

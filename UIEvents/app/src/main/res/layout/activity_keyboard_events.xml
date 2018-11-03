@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/eteUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_marginBottom="10dp"
+            android:ems="10"
+            android:inputType="text"
+            android:imeOptions="actionNext"
+            android:contentDescription="Ingresar Username"
+            android:hint="Username" />
+
+        <EditText
+            android:id="@+id/eteEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:ems="10"
+            android:layout_marginBottom="10dp"
+            android:inputType="textEmailAddress"
+            android:imeOptions="actionNext"
+            android:hint="Email" />
+
+        <EditText
+            android:id="@+id/etePassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:layout_marginBottom="40dp"
+            android:imeOptions="actionDone"
+            android:hint="Password"  />
+        <Button
+            android:id="@+id/btnSignUp"
+            android:background="@color/skye"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="@string/sign_up"
+            android:textSize="20sp"
+            android:padding="5dp"
+            android:gravity="center" />
+    </LinearLayout>
+</RelativeLayout>

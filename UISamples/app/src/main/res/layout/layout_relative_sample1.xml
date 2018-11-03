@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blueskye">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/white"/>
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/white"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:hint="Name"
+        android:layout_below="@+id/imageView"/>
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/white"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:hint="Email"
+        android:layout_below="@+id/editTextName"/>
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/white"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:hint="Password"
+        android:layout_below="@+id/editTextEmail"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:textAllCaps="false"
+        android:background="@drawable/my_shape"
+        android:textColor="@color/white"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:text="Sign Up"
+        android:layout_below="@+id/editTextPassword"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:padding="20dp"
+        android:text="Privacy policy / Terms of service" />
+</RelativeLayout>

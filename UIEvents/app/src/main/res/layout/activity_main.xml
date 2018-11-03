@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="10dp">
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Click Events"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/btnClick"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Item Events"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/btnItems"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Keyboard Events"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/btnKeyboard"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Form Example"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/btnForm"/>
+</LinearLayout>

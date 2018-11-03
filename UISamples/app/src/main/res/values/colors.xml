@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="blueskye">#00A8ED</color>
+    <color name="blueskye1">#32A7DE</color>
+    <color name="gray3">#444444</color>
+    <color name="gray4">#DFDFDC</color>
+    <color name="gray5">#A2A2A0</color>
+    <color name="black">#000000</color>
+
+    <color name="gray">#F2F2F2</color>
+    <color name="blue">#4B7BD7</color>
+    <color name="skyblue">#00C5FD</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black2">#555555</color>
+    <color name="black1">#1D1D1B</color>
+    <color name="gray_bg">#CCCCCC</color>
+    <color name="gray2">#EEEEEE</color>
+    <color name="green">#7EB888</color>
+    <color name="blue_bg">#4F7BA0</color>
+    <color name="gray_txt">#B0BEC9</color>
+    <color name="blue_txt">#7293AC</color>
+    <color name="black60">#99000000</color>
+    <!-- #F2F2F2
+    #4B7BD7
+    #00C5FD
+    #FFFFFF
+    #555555
+    #1D1D1B -->
+
+    <!-- transparency -->
+    <!--
+    100 FF
+    95  F2
+    90  E6
+    85  D9
+    80  CC
+    75  BF
+    65  A6
+    60  99
+    55  8C
+    50  80
+    45  73
+    40  66
+    35  59
+    30  4d
+    25  40
+    20  33
+    15  26
+    10  1A
+    5   0D
+    0   00
+    -->
+</resources>
