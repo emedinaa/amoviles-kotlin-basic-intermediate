@@ -11,50 +11,16 @@ Lesson4 https://github.com/emedinaa/amoviles-kotlin-basic-intermediate/archive/L
 
 # References
 
-- Android Jetpack https://developer.android.com/jetpack/?hl=es-419
+Adapter https://developer.android.com/reference/android/widget/Adapter.html
 
-- User Interface & Navigation https://developer.android.com/guide/topics/ui/declaring-layout?hl=es-419
+ListView https://developer.android.com/guide/topics/ui/layout/listview.html
 
-- Device compatibility https://developer.android.com/guide/practices/compatibility
+GridView https://developer.android.com/guide/topics/ui/layout/gridview.html
 
-- User Interface & Navigation https://developer.android.com/guide/topics/ui/
+RecyclerView https://developer.android.com/guide/topics/ui/layout/recyclerview.html
 
-- Layouts https://developer.android.com/guide/topics/ui/declaring-layout
+Creating List and Cards https://developer.android.com/training/material/lists-cards.html
 
-- ConstraintLayout https://developer.android.com/reference/android/support/constraint/ConstraintLayout
+RecyclerView https://developer.android.com/reference/android/support/v7/widget/RecyclerView.html
 
-- ConstraintLayout 1.1 https://medium.com/google-developers/introducing-constraint-layout-1-1-d07fc02406bc
-
-- Understanding the performance benefits of ConstraintLayout  https://android-developers.googleblog.com/2017/08/understanding-performance-benefits-of.html
-
-- CodeLab ConstraintLayout https://codelabs.developers.google.com/codelabs/constraint-layout/
-
-- Layouts https://developer.android.com/guide/topics/ui/declaring-layout.html
-
-- User Interface https://developer.android.com/guide/topics/ui/index.html
-
-- Layout Editor https://developer.android.com/studio/write/layout-editor.html
-
-- LinearLayout https://developer.android.com/guide/topics/ui/layout/linear.html
-
-- RelativeLayout https://developer.android.com/guide/topics/ui/layout/relative.html
-
-- ConstraintLayout https://developer.android.com/training/constraint-layout/index.html
-
-- Recursos de diseño https://www.uplabs.com/
-
-- Iconos https://www.iconfinder.com/
-
-- Android Inspired UI http://android.inspired-ui.com/
-
-- Drawable Resources https://developer.android.com/guide/topics/resources/drawable-resource.html
-
-- Device compatibility https://developer.android.com/guide/practices/compatibility
-
-- Material colors https://www.materialui.co/colors
-
-- Touch & input https://developer.android.com/guide/input/
-
-- User Events https://developer.android.com/guide/topics/ui/ui-events.html
-
-- Controles de entrada https://developer.android.com/guide/topics/ui/controls.html
+Android Developers Fundamentals Course - Create a RecyclerView https://google-developer-training.gitbooks.io/android-developer-fundamentals-course-practicals/content/en/Unit%202/44_p_create_a_recycler_view.html
