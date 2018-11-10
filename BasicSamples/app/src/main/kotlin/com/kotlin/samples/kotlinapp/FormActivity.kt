@@ -3,6 +3,7 @@ package com.kotlin.samples.kotlinapp
 import android.os.Bundle
 import android.support.v7.app.AlertDialog
 import android.support.v7.app.AppCompatActivity
+import android.util.Log
 import com.kotlin.samples.kotlinapp.extensions.isValidEmail
 import kotlinx.android.synthetic.main.activity_form.*
 
@@ -30,10 +31,13 @@ class FormActivity : AppCompatActivity() {
     }
 
     private fun validateForm():Boolean{
-        name= eteName.text.toString().toString()
-        email= eteEmail.text.toString().toString()
-        password1= etePassword1.text.toString().toString()
-        password2= etePassword2.text.toString().toString()
+        //TODO capturar lo que usuario ingreso
+        name= eteName.text.toString().trim()
+        email= eteEmail.text.toString().trim()
+        password1= etePassword1.text.toString().trim()
+        password2= etePassword2.text.toString().trim()
+
+        Log.v("CONSOLE", " name $name email $email password1 $password1 password2 $password2")
 
         if(name.isEmpty()){
             eteName.error="Ingresar el nombre"

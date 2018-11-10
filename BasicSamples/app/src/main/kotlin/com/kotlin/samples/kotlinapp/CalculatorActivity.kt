@@ -13,6 +13,8 @@ class CalculatorActivity : AppCompatActivity(),View.OnClickListener {
     private var op2=0
     private var op=0.0
 
+    //private var myButton:Button?=null
+
     companion object {
         const  val TAG="CONSOLE"
     }
@@ -20,10 +22,17 @@ class CalculatorActivity : AppCompatActivity(),View.OnClickListener {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_calculator)
+
+        //myButton= findViewById(R.id.myButton)
+
         iviSum.setOnClickListener(this)
         iviSubtract.setOnClickListener(this)
         iviMultiply.setOnClickListener(this)
         iviDivide.setOnClickListener(this)
+
+        /*iviSum.setOnClickListener {
+            //TODO
+        }*/
     }
 
     override fun onClick( view: View?) {
@@ -36,29 +45,49 @@ class CalculatorActivity : AppCompatActivity(),View.OnClickListener {
 
         //TODO validar campos
         if(mOp1.isEmpty() || mOp2.isEmpty()){
+            Log.v(TAG, "Ingresar campos")
             return
         }
 
+        //TODO convertir campos
+        //val sOp1= editTextOp1.text.toString()
+        //op1= mOp1.toInt()
         op1= editTextOp1.text.toString().toInt()
         op2= editTextOp2.text.toString().toInt()
 
         Log.v(TAG, "op1 $op1 op2 $op2")
 
         //TODO operaciones
-        when(view?.id){
+        when(view?.id){ //switch
             R.id.iviSum -> op= sumar(op1,op2).toDouble()
             R.id.iviSubtract -> op= restar(op1,op2).toDouble()
-            R.id.iviMultiply -> op= multiplicar(op1,op2).toDouble()
-            R.id.iviDivide -> op= dividir(op1,op2)
+            R.id.iviMultiply ->
+                op= multiplicar(op1,op2).toDouble()
+            R.id.iviDivide -> {
+                //validation
+                if(op2==0){
+
+                    Log.v(TAG, "Valor 3 debe ser diferente de cero")
+                    return
+                }
+                op= dividir(op1,op2)
+            }
         }
         Log.v(TAG, "op $op")
 
         //TODO mostrar resultados
-        tviOp.text= "Resultado $op"
+        tviOp.text= "Resultado es : $op"
     }
 
+    /*private fun sum(mOp1:Int, mOp2:Int):Int{
+        return mOp1+mOp2
+    }*/
+
     private fun sumar(mOp1:Int, mOp2:Int)= mOp1+mOp2
+
     private fun restar(mOp1:Int, mOp2:Int)= mOp1-mOp2
+
     private fun multiplicar(mOp1:Int, mOp2:Int)= mOp1*mOp2
+
     private fun dividir(mOp1:Int, mOp2:Int)= mOp1*1.0/mOp2
 }

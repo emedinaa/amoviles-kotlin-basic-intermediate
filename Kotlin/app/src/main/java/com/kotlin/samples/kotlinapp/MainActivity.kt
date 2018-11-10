@@ -17,6 +17,19 @@ class MainActivity : AppCompatActivity() {
 
         //events
         button.setOnClickListener {
+
+            /*val persona= Persona(0,"Eduardo","Medina",
+                    "abc@abc.com",35)
+
+            Log.v("CONSOLE","persona.id ${persona.id}")
+            val id= persona.id //lectura
+            //persona.id= 20 val
+            persona.id=20 //var
+
+            val name= persona.nombre
+            //val email= persona.email
+            Log.v("CONSOLE","persona.id ${persona.id}")
+            Log.v("CONSOLE","persona.nombre ${persona.nombre}")*/
             createEntity()
             //showMessage("Hello Kotlin!")
         }

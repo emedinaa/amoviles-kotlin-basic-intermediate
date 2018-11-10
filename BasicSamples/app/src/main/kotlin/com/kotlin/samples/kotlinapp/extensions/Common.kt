@@ -12,3 +12,5 @@ fun Context.toast(message: String, duration: Int = Toast.LENGTH_LONG) {
 }
 
 fun String.isValidEmail():Boolean= Patterns.EMAIL_ADDRESS.matcher(this).matches()
+
+//fun String.validarSiElFormatoDeEmail()
