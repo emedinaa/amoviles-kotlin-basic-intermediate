@@ -1,4 +1,4 @@
-# Lesson 4 - Saturday, November 4
+# Lesson 4 - Saturday, November 10
 Curso de Aplicaciones Android con Kotlin (Básico - Intermedio) - Academia Móviles
 
 # Slides
