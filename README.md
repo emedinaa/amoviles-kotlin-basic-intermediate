@@ -1,45 +1,60 @@
-# amoviles-kotlin-basic-intermediate
+# Lesson 4 - Saturday, November 4
 Curso de Aplicaciones Android con Kotlin (Básico - Intermedio) - Academia Móviles
 
-# Instructor
-Eduardo José Medina Alfaro
+# Slides
 
-emedinaa@gmail.com
+Lesson4-List&Adapter https://docs.google.com/presentation/d/1aA6tzgdWVRNcv-PXYxFY47jdaJLQpt5LVMZuxmj4gdY/edit?usp=sharing
 
-https://github.com/emedinaa
+# Samples
 
-# Temario
+Lesson4 https://github.com/emedinaa/amoviles-kotlin-basic-intermediate/archive/Lesson4-Adapters.zip
 
-- Sobre Kotlin
+# References
 
-Item | Tema
------------- | -------------
-1 | Fundamentos del lenguaje
-2 | Comparación con Java
-3 | Funciones y Lambdas
-4 | Seguridad ante Nulls
-5 | Data Class
-6 | Crear un proyecto Android con Kotlin
-7 | Componentes Android con Kotlin
-8 | Interoperabilidad con Java
-9 | Kotlin/Android extensions
-10 | Patrones con Kotlin
-11 | Anko Library
+- Android Jetpack https://developer.android.com/jetpack/?hl=es-419
 
-- Android con Kotlin / Nivel Básico Intermedio
+- User Interface & Navigation https://developer.android.com/guide/topics/ui/declaring-layout?hl=es-419
 
-Item | Sección | Contenido
------------- | ------------- | -------------
-1 | Kotlin para desarrolladores Android | - Fundamentos del lenguaje - OOP - Comparación con Java - Funciones y Lambdas
-2 | Fundamentals | - Android Components - Activity, Services, Broadcast Receiver, Content Providers
-3 | Android Studio | - Gradle - Android Studio - Crear un proyecto Android con Kotlin
-4 | Interfaz de Usuario | - Layout y Widgets - User Events - Componentes Android con Kotlin
-5 | RecyclerView y Adapters | - Basic Adapters - Custom Adapters - Seguridad ante Nulls - Data Class
-6 | Fragments | - Fundamentos - Fragments - Interoperabilidad con Java
+- Device compatibility https://developer.android.com/guide/practices/compatibility
 
-# Referencias 
+- User Interface & Navigation https://developer.android.com/guide/topics/ui/
 
-- Kotlin programming language https://kotlinlang.org/
-- Develop Android apps with Kotlin https://developer.android.com/kotlin/
-- Kotlin offical documentation https://kotlinlang.org/docs/reference/
-- CodeLabs https://codelabs.developers.google.com/
+- Layouts https://developer.android.com/guide/topics/ui/declaring-layout
+
+- ConstraintLayout https://developer.android.com/reference/android/support/constraint/ConstraintLayout
+
+- ConstraintLayout 1.1 https://medium.com/google-developers/introducing-constraint-layout-1-1-d07fc02406bc
+
+- Understanding the performance benefits of ConstraintLayout  https://android-developers.googleblog.com/2017/08/understanding-performance-benefits-of.html
+
+- CodeLab ConstraintLayout https://codelabs.developers.google.com/codelabs/constraint-layout/
+
+- Layouts https://developer.android.com/guide/topics/ui/declaring-layout.html
+
+- User Interface https://developer.android.com/guide/topics/ui/index.html
+
+- Layout Editor https://developer.android.com/studio/write/layout-editor.html
+
+- LinearLayout https://developer.android.com/guide/topics/ui/layout/linear.html
+
+- RelativeLayout https://developer.android.com/guide/topics/ui/layout/relative.html
+
+- ConstraintLayout https://developer.android.com/training/constraint-layout/index.html
+
+- Recursos de diseño https://www.uplabs.com/
+
+- Iconos https://www.iconfinder.com/
+
+- Android Inspired UI http://android.inspired-ui.com/
+
+- Drawable Resources https://developer.android.com/guide/topics/resources/drawable-resource.html
+
+- Device compatibility https://developer.android.com/guide/practices/compatibility
+
+- Material colors https://www.materialui.co/colors
+
+- Touch & input https://developer.android.com/guide/input/
+
+- User Events https://developer.android.com/guide/topics/ui/ui-events.html
+
+- Controles de entrada https://developer.android.com/guide/topics/ui/controls.html
