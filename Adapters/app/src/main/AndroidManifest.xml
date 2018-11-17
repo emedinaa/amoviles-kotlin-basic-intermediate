@@ -10,11 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".SimpleListActivity">
-            <intent-filter>
+            <!--<intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            </intent-filter>-->
         </activity>
         <activity android:name=".SimpleGridActivity">
 
@@ -26,15 +26,24 @@
             </intent-filter>
             -->
         </activity>
-        <activity android:name=".MovieListActivity" >
-           <!--<intent-filter>
+        <activity android:name=".MovieListActivity">
+
+            <!--
+           <intent-filter>
                <action android:name="android.intent.action.MAIN" />
 
                <category android:name="android.intent.category.LAUNCHER" />
-           </intent-filter>-->
+           </intent-filter>
+            -->
         </activity>
+        <activity android:name=".MovieGridActivity" />
+        <activity android:name=".PokemonListActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-        <activity android:name=".MovieGridActivity"></activity>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

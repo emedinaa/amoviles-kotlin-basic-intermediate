@@ -42,7 +42,7 @@ class SimpleListActivity : AppCompatActivity() {
 
         listViewMovies.adapter= arrayAdapter
         //listViewMovies.adapter= arrayAdapter1
-        //listViewMovies.adapter= adapter
+        listViewMovies.adapter= adapter
 
         //events
         listViewMovies.setOnItemClickListener { adapterView, view, position, l ->
