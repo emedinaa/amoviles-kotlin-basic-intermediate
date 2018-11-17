@@ -19,7 +19,8 @@
         <activity android:name=".BasicEventsActivity" />
         <activity android:name=".KeyboardEventsActivity" />
         <activity android:name=".FormActivity" />
-        <activity android:name=".ItemEventsActivity"></activity>
+        <activity android:name=".ItemEventsActivity" />
+        <activity android:name=".Main2Activity"></activity>
     </application>
 
 </manifest>
