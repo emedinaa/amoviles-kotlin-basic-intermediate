@@ -16,8 +16,8 @@ class ItemEventsActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_item_events)
         //supportActionBar?.setDisplayHomeAsUpEnabled(true)
-        ui()
-        //uiFlag()
+        //ui()
+        uiFlag()
     }
 
     private fun uiFlag(){
@@ -39,12 +39,15 @@ class ItemEventsActivity : AppCompatActivity() {
     }
 
     private fun ui(){
+        //spLocation.setOnItemSelectedListener(new OnItem)
         spLocation.onItemSelectedListener= object: AdapterView.OnItemSelectedListener {
-            override fun onNothingSelected(p0: AdapterView<*>?) {}
+            override fun onNothingSelected(p0: AdapterView<*>?) {
+
+            }
 
             override fun onItemSelected(adapterView: AdapterView<*>?, view: View?, i: Int, l: Long) {
                 location= adapterView?.adapter?.getItem(i).toString()
-                showMessage("Item selected $location")
+                showMessage("Item selected i : $i  value : $location")
             }
         }
     }

@@ -33,4 +33,12 @@
         android:text="Form Example"
         android:layout_marginBottom="5dp"
         android:id="@+id/btnForm"/>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Test"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/button"/>
 </LinearLayout>

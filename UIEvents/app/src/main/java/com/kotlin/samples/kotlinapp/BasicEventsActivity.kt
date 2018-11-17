@@ -13,7 +13,7 @@ class BasicEventsActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_basic_events)
-        //supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
         btn.setOnClickListener {
             message= "BUTTON"
@@ -41,8 +41,8 @@ class BasicEventsActivity : AppCompatActivity() {
         Toast.makeText(this, msg, Toast.LENGTH_SHORT).show()
     }
 
-    /*override fun onSupportNavigateUp(): Boolean {
+    override fun onSupportNavigateUp(): Boolean {
         onBackPressed()
         return true
-    }*/
+    }
 }

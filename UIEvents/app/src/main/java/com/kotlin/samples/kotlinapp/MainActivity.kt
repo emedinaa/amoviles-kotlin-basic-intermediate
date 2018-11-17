@@ -28,9 +28,14 @@ class MainActivity : AppCompatActivity() {
         btnKeyboard.setOnClickListener {
             goToKeyboardEvents()
         }
+
+        //button.setOnClickListener {  }
     }
 
     private fun goToBasicEvents() {
+
+        //1.Contexto de la vista donde te encuentras
+        //2. Conocer la pantalla de destino
         startActivity(Intent(this, BasicEventsActivity::class.java))
     }
 

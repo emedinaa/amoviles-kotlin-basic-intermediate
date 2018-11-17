@@ -29,8 +29,7 @@
             android:gravity="right"
             android:textSize="18sp"
             android:spinnerMode="dialog"
-            android:entries="@array/dataDias"
-            />
+            android:entries="@array/data" />
 
     </LinearLayout>
 </RelativeLayout>

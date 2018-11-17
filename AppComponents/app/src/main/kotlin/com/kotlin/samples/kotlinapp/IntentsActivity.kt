@@ -5,6 +5,7 @@ import android.app.SearchManager
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
+import android.provider.MediaStore
 import android.support.v7.app.AppCompatActivity
 import android.util.Log
 import android.widget.Toast
@@ -18,8 +19,11 @@ class IntentsActivity : AppCompatActivity() {
     /**
      * https://developer.android.com/guide/components/intents-common?hl=es-419
      * https://android-developers.googleblog.com/2012/02/share-with-intents.html
+     * https://developers.google.com/maps/documentation/urls/android-intents
      */
     private val REQUEST_IMAGE_GET=1
+    val REQUEST_IMAGE_CAPTURE = 2
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -30,7 +34,13 @@ class IntentsActivity : AppCompatActivity() {
             showMessage("Hello Kotlin!")
 
             //openWebPage("https://www.google.com/")
-            dialPhoneNumber("947904631")
+            //dialPhoneNumber("947904631")
+            //composeEmail()
+            //val gmmIntentUri:Uri  = Uri.parse("geo:37.7749,-122.4192?q=" + Uri.encode("1st & Pike, Seattle"))
+            //val gmmIntentUri:Uri  = Uri.parse("geo:-11.9917806,-77.0647037")
+            //showMap(gmmIntentUri)
+            //selectImage()
+            openCamera()
         }
     }
 
@@ -91,9 +101,22 @@ class IntentsActivity : AppCompatActivity() {
         }
     }
 
+    fun openCamera(){
+        Intent(MediaStore.ACTION_IMAGE_CAPTURE).also { takePictureIntent ->
+            takePictureIntent.resolveActivity(packageManager)?.also {
+                startActivityForResult(takePictureIntent, REQUEST_IMAGE_CAPTURE)
+            }
+        }
+
+    }
+
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         if (requestCode == REQUEST_IMAGE_GET && resultCode == Activity.RESULT_OK) {
             //Bitmap thumbnail = data.getParcelable("data");
+            val fullPhotoUri = data?.data
+            // Do work with photo saved at fullPhotoUri
+            showMessage(fullPhotoUri?.toString())
+        }else if(requestCode == REQUEST_IMAGE_CAPTURE && resultCode == Activity.RESULT_OK){
             val fullPhotoUri = data?.data
             // Do work with photo saved at fullPhotoUri
             showMessage(fullPhotoUri?.toString())

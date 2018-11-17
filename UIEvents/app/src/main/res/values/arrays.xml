@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="data">
-      <item >Surco</item>
+        <item >Surco</item>
         <item >Magdalena</item>
         <item >San Luis</item>
         <item >Callao</item>

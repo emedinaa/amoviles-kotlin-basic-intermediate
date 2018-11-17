@@ -20,7 +20,7 @@
         <activity android:name=".KeyboardEventsActivity" />
         <activity android:name=".FormActivity" />
         <activity android:name=".ItemEventsActivity" />
-        <activity android:name=".Main2Activity"></activity>
+        <activity android:name=".Main2Activity"/>
     </application>
 
 </manifest>
