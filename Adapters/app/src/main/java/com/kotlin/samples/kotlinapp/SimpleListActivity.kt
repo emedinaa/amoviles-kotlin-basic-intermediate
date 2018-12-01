@@ -2,7 +2,6 @@ package com.kotlin.samples.kotlinapp
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
-import android.widget.ArrayAdapter
 import android.widget.Toast
 import com.kotlin.samples.kotlinapp.adapters.SimpleListAdapter
 import com.kotlin.samples.kotlinapp.extensions.toast
@@ -34,15 +33,15 @@ class SimpleListActivity : AppCompatActivity() {
         setContentView(R.layout.activity_simple_list)
 
         //adapter
-        val arrayAdapter= ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,mDays)
+        //val arrayAdapter= ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,mMonths)
 
-        val arrayAdapter1= ArrayAdapter<String>(this,R.layout.row,mDays)
+        //val arrayAdapter1= ArrayAdapter<String>(this,R.layout.row,mMonths)
 
         val adapter= SimpleListAdapter(this, mDays)
 
-        listViewMovies.adapter= arrayAdapter
-        //listViewMovies.adapter= arrayAdapter1
         listViewMovies.adapter= adapter
+        //listViewMovies.adapter= arrayAdapter1
+        //listViewMovies.adapter= adapter
 
         //events
         listViewMovies.setOnItemClickListener { adapterView, view, position, l ->

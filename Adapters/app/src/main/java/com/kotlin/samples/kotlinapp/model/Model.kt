@@ -9,3 +9,5 @@ import java.io.Serializable
  */
 data class Pokemon(val id:Int,val name:String,val desc:String,
                    val photo:String):Serializable
+
+data class NPerson(val name:String,val nickname:String)

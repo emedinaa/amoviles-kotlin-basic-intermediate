@@ -23,7 +23,7 @@ class SimpleGridActivity : AppCompatActivity() {
         setContentView(R.layout.activity_simple_grid)
 
         //adapter
-        val adapter= SimpleGridAdapter(this, mDays)
+        val adapter= SimpleGridAdapter(this, mMonths)
         gridViewSimple.adapter= adapter
 
         //events

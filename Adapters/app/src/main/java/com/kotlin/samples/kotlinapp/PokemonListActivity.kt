@@ -28,7 +28,7 @@ class PokemonListActivity : AppCompatActivity() {
         setContentView(R.layout.activity_pokemon_list)
 
         //mLayoutManager= LinearLayoutManager(this,LinearLayoutManager.VERTICAL,false)//LinearLayoutManager.VERTICAL
-        mLayoutManager= GridLayoutManager(this, DEFAULT_SPANCOUNT)
+        mLayoutManager= GridLayoutManager(this, 3)
         recyclerViewPokemon.layoutManager= mLayoutManager
 
         //events

@@ -1,7 +1,6 @@
 package com.kotlin.samples.kotlinapp.adapters
 
 import android.content.Context
-import android.graphics.Color
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -31,8 +30,14 @@ class MovieListAdapter(private val context: Context,
         val movie= data[position]
 
         vh.tviName.text =  movie.title
-        vh.iviCartelera.visibility= if(movie.cartelera) View.VISIBLE else View.GONE
-        vh.tviName.setTextColor(if(position==0) Color.GREEN else Color.BLACK)
+        /*vh.iviCartelera.visibility= if(movie.cartelera) View.VISIBLE else View.GONE
+        vh.tviName.setTextColor(if(position==0) Color.GREEN else Color.BLACK)*/
+
+        if(movie.cartelera){
+            vh.iviCartelera.visibility=View.VISIBLE
+        }else{
+            vh.iviCartelera.visibility=View.GONE
+        }
 
         return view
     }
