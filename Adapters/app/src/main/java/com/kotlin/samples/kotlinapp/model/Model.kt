@@ -11,3 +11,6 @@ data class Pokemon(val id:Int,val name:String,val desc:String,
                    val photo:String):Serializable
 
 data class NPerson(val name:String,val nickname:String)
+
+data class Product(val name:String,val price:Double,val stock:Int?,
+                   val photo:Int)
