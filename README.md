@@ -4,7 +4,7 @@ Curso de Aplicaciones Android con Kotlin (Básico - Intermedio) - Academia Móvi
 
 # Slides
 
-Lesson5-Fragments 
+Lesson5-Fragments https://docs.google.com/presentation/d/1C0dRsJ5y7HYesuPGiNTpLl45AZlNm_v671WQ9LZ_j18/edit?usp=sharing
 
 # Samples
 
