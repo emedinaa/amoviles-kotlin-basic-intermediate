@@ -1,0 +1,39 @@
+
+Listado de productos
+
+1. Entidad
+
+data class Product(val name:String,val price:Double,val stock:Int?,
+                   val photo:Int)
+
+2. Data
+
+object ProductData {
+
+    fun getProductList():List<Product>{
+        val mList:MutableList<Product> = arrayListOf()
+        mList.add(Product("Lapicero", 1.0,10,0))
+        mList.add(Product("Borrador", 0.5,10,0))
+        mList.add(Product("Folders", 1.5,10,0))
+        mList.add(Product("Cuadernos", 2.0,10,0))
+        mList.add(Product("Tajador", 0.5,10,0))
+        mList.add(Product("Hojas Bond", 1.5,10,0))
+        mList.add(Product("Tajador", 0.5,10,0))
+        mList.add(Product("Tajador", 0.5,10,0))
+
+        return mList.toList()
+    }
+}
+
+3. Contenedor
+ListView
+
+4. Celda (xml)
+row_product
+
+5. Adapter
+ProductListAdapter
+
+6. Asociar Contenedor con el adapter
+listViewProduct.adapter= 
+                ProductListAdapter(this,products)
