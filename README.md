@@ -10,6 +10,11 @@ Lesson6-Navigation
 
 Lesson6 https://github.com/emedinaa/amoviles-kotlin-basic-intermediate/archive/Lesson6-Projects.zip
 
+
+# Exercises
+
+Navigation https://docs.google.com/drawings/d/1TGwwf0I4w8h-TmFnxg660KYQpKDCkEEXlbpgOdJ31LA/edit?usp=sharing
+
 # References
 
 - Support different screen sizes  https://developer.android.com/training/multiscreen/screensizes?hl=es-419
