@@ -24,6 +24,14 @@ class SplashActivity : AppCompatActivity() {
     }
 
     private fun goToLogIn(){
-        startActivity(Intent(this, LogInActivity::class.java))
+        //Pantalla inicial
+        //Pantalla destino
+        //startActivity
+        //Necesito regresar?
+
+        val intent= Intent(this,LogInActivity::class.java)
+        startActivity(intent)
+        finish()
+        //startActivity(Intent(this, LogInActivity::class.java))
     }
 }

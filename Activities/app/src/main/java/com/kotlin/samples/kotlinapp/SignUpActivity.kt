@@ -18,17 +18,18 @@ class SignUpActivity : AppCompatActivity() {
             goToMain()
         }
 
-        /*iviBack.setOnClickListener {
+        iviBack.setOnClickListener {
             goToLogIn()
-        }*/
+        }
     }
 
     private fun goToMain(){
         startActivity(Intent(this, MainActivity::class.java))
+        finish()
     }
 
     private fun goToLogIn(){
-        //startActivity(Intent(this, LogInActivity::class.java))
+        startActivity(Intent(this, LogInActivity::class.java))
         finish()
     }
 

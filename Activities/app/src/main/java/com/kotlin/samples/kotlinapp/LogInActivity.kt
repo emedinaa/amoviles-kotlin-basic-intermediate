@@ -35,10 +35,13 @@ class LogInActivity : AppCompatActivity() {
         intent.putExtras(bundle)
 
         startActivity(intent)
+        finish()
     }
 
     private fun goToSignUp(){
-        startActivity(Intent(this, SignUpActivity::class.java))
+        startActivity(Intent(this,
+                SignUpActivity::class.java))
+        finish()
     }
 
     override fun onBackPressed() {

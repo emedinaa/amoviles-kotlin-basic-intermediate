@@ -59,4 +59,9 @@ class AFragment : Fragment() {
                     }
                 }
     }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        //stopCalls()
+    }
 }

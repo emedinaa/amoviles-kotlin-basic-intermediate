@@ -18,14 +18,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SwipeTabsActivity"
+        <!--<activity android:name=".SwipeTabsActivity"
             android:theme="@style/MyMaterialTheme">
-            <!--<intent-filter>
+            <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>-->
-        </activity>
+            </intent-filter>
+        </activity>-->
         <activity android:name=".NavigationDrawerActivity"
             android:theme="@style/NavAppTheme">
              <!--<intent-filter>
@@ -35,7 +35,7 @@
             </intent-filter>-->
         </activity>
         <activity android:name=".ViewPagerActivity">
-           <!-- <intent-filter>
+           <!--<intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
