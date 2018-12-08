@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/menuAndroid"
+            android:checked="false"
+            android:icon="@drawable/ic_android_black_48dp"
+            android:title="Android" />
+
+        <item
+            android:id="@+id/menuAndroidBug"
+            android:checked="false"
+            android:icon="@drawable/ic_bug_report_black_48dp"
+            android:title="Bug" />
+
+        <item
+            android:id="@+id/menuAndroidHelp"
+            android:checked="false"
+            android:icon="@drawable/ic_help_black_48dp"
+            android:title="Help" />
+
+
+    </group>
+</menu>
+
