@@ -33,7 +33,7 @@ class BottomNavigationActivity : AppCompatActivity() {
         }
 
         //first tab
-        changeFragment(AFragment.newInstance("",""))
+        //changeFragment(AFragment.newInstance("",""))
     }
 
 

@@ -10,7 +10,6 @@ class SignUpActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_sign_up)
-
         ui()
     }
 
@@ -19,9 +18,9 @@ class SignUpActivity : AppCompatActivity() {
             goToMain()
         }
 
-        iviBack.setOnClickListener {
+        /*iviBack.setOnClickListener {
             goToLogIn()
-        }
+        }*/
     }
 
     private fun goToMain(){
