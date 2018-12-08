@@ -8,7 +8,7 @@ Lesson6-Navigation
 
 # Lesson
 
-Lesson6 https://github.com/emedinaa/amoviles-kotlin-basic-intermediate/archive/Lesson6-Fragments.zip
+Lesson6 https://github.com/emedinaa/amoviles-kotlin-basic-intermediate/archive/Lesson6-Projects.zip
 
 # References
 
