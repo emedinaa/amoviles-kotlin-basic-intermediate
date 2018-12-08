@@ -19,7 +19,7 @@ class FS1Activity : AppCompatActivity() {
             fragmentS1= fragmentManager.findFragmentById(R.id.fragment) as FragmentS1
         }
 
-        //fragmentS1?.changeColor("#AED581")
+        fragmentS1?.changeColor("#AED581")
         //fragmentS1?.changeColor("#FFCA28")
 
     }
