@@ -1,45 +1,127 @@
-# amoviles-kotlin-basic-intermediate
+# Lesson 6 - Saturday, December 15
+
 Curso de Aplicaciones Android con Kotlin (Básico - Intermedio) - Academia Móviles
 
-# Instructor
-Eduardo José Medina Alfaro
+# Slides
 
-emedinaa@gmail.com
+Lesson7-StoragOptions 
 
-https://github.com/emedinaa
+# Lesson
 
-# Temario
+Lesson6 https://github.com/emedinaa/amoviles-kotlin-basic-intermediate/archive/Lesson7-StorageOptions.zip
 
-- Sobre Kotlin
+- SharedPreferences
 
-Item | Tema
------------- | -------------
-1 | Fundamentos del lenguaje
-2 | Comparación con Java
-3 | Funciones y Lambdas
-4 | Seguridad ante Nulls
-5 | Data Class
-6 | Crear un proyecto Android con Kotlin
-7 | Componentes Android con Kotlin
-8 | Interoperabilidad con Java
-9 | Kotlin/Android extensions
-10 | Patrones con Kotlin
-11 | Anko Library
+Te permite almacenar información del tipo <key, value>, donde la única forma de que se pierda es borrando la cache de la app o eliminando la aplicación.
 
-- Android con Kotlin / Nivel Básico Intermedio
+Para instanciar el SP , realizamos lo siguiente 
 
-Item | Sección | Contenido
------------- | ------------- | -------------
-1 | Kotlin para desarrolladores Android | - Fundamentos del lenguaje - OOP - Comparación con Java - Funciones y Lambdas
-2 | Fundamentals | - Android Components - Activity, Services, Broadcast Receiver, Content Providers
-3 | Android Studio | - Gradle - Android Studio - Crear un proyecto Android con Kotlin
-4 | Interfaz de Usuario | - Layout y Widgets - User Events - Componentes Android con Kotlin
-5 | RecyclerView y Adapters | - Basic Adapters - Custom Adapters - Seguridad ante Nulls - Data Class
-6 | Fragments | - Fundamentos - Fragments - Interoperabilidad con Java
+```java
+   sharedPreferences=getSharedPreferences("com.amoviles.sharedpref", Context.MODE_PRIVATE);
+```
+Donde el primer parámetro es el nombre que vamos a usar para este SP y luego , el segundo , es para definir el nivel de privacidad :
 
-# Referencias 
+```java
+  Context.MODE_PRIVATE //Privado y solo se puede acceder desde la app
+  Context.MODE_APPEND //Compartido para el resto de apps
+```
+Para poder almacenar valores en el SP, primero debemos tener una instancia del SharedPreferences.Editor
 
-- Kotlin programming language https://kotlinlang.org/
-- Develop Android apps with Kotlin https://developer.android.com/kotlin/
-- Kotlin offical documentation https://kotlinlang.org/docs/reference/
-- CodeLabs https://codelabs.developers.google.com/
+```java
+  private SharedPreferences.Editor sharedPreferencesEditor;
+  sharedPreferencesEditor= sharedPreferences.edit();
+```
+Luego, si queremos guadar un valor usamos el método "putString(key, value)" para almacenar un String y con "apply" concluimos la operación. 
+
+```java
+  private void saveStringKey(String key, String value){
+  
+        sharedPreferencesEditor.putString(key, value);
+        sharedPreferencesEditor.apply();
+        //sharedPreferencesEditor.commit();
+        
+    }
+ ...
+ 
+ saveStringKey("USERNAME","edu");
+```
+Despúes de guardar , lo siguiente es poder obtener los valores almacenados. Tener presente que requerimos del
+
+```java
+ private void retrieveStringValue(String key){
+        String value= sharedPreferences.getString(key,"Valor eliminado");
+        //log(String.format("retrieve key : %s , value : %s",key,value));
+    }
+  ...
+  retrieveStringValue("USERNAME");
+````
+
+Otra opción que disponemos , es eliminar un elemento del SP o limpiar todo el SP con todos los elementos almacenados.
+
+Si queremos eliminar solo un elemento, necesitamos el Key
+
+```java
+  sharedPreferencesEditor.remove(key);
+  sharedPreferencesEditor.apply();
+```
+
+Pero , si lo que necesitamos es borrar o limpiar todo el SP
+
+```java
+ private void clear(){
+        
+        //sharedPreferencesEditor.remove(key);
+        sharedPreferencesEditor.clear();
+        sharedPreferencesEditor.apply();
+    }
+```
+
+- Inicializar SharedPreferences
+
+```java
+Context context = getActivity();
+SharedPreferences sharedPref = context.getSharedPreferences(
+        getString(R.string.preference_file_key), Context.MODE_PRIVATE);
+```
+
+- Guardar un valor
+
+```java
+SharedPreferences sharedPref = getActivity().getPreferences(Context.MODE_PRIVATE);
+SharedPreferences.Editor editor = sharedPref.edit();
+editor.putInt(getString(R.string.saved_high_score_key), newHighScore);
+editor.commit();
+```
+
+- Obtener un valor
+
+```java
+SharedPreferences sharedPref = getActivity().getPreferences(Context.MODE_PRIVATE);
+int defaultValue = getResources().getInteger(R.integer.saved_high_score_default_key);
+int highScore = sharedPref.getInt(getString(R.string.saved_high_score_key), defaultValue);
+```
+
+## Samples
+
+
+## Exercises
+
+## Homework
+- xxxx
+
+## Resources 
+
+- Save Key-Value Data with SharedPreferences https://developer.android.com/training/data-storage/shared-preferences.html#java
+
+- Save Data using SQLite https://developer.android.com/training/data-storage/sqlite.html
+
+- Storage Options https://developer.android.com/guide/topics/data/data-storage.html
+
+- Saving Files https://developer.android.com/training/data-storage/files.html
+
+- Data and File Storage Overview https://developer.android.com/guide/topics/data/data-storage.html
+
+- SharedPreferences https://developer.android.com/training/data-storage/shared-preferences.html
+
+- Uplabs https://www.uplabs.com/android
+
