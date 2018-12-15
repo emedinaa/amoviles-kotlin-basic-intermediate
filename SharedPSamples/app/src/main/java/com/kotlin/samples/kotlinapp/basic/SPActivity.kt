@@ -1,4 +1,4 @@
-package com.kotlin.samples.kotlinapp
+package com.kotlin.samples.kotlinapp.basic
 
 import android.content.Context
 import android.content.SharedPreferences
@@ -42,14 +42,17 @@ class SPActivity : AppCompatActivity(),SharedPreferences.OnSharedPreferenceChang
     private fun saveParameters(){
         mSharedPreferencesEditor.putInt("USERID", 100)
         mSharedPreferencesEditor.putString("USERNAME", "edu")
-        mSharedPreferencesEditor.putBoolean("STATE", false)
+        mSharedPreferencesEditor.putBoolean("STATE", true)
         mSharedPreferencesEditor.apply()
     }
 
     private fun clearParameters(){
+        //mSharedPreferencesEditor.remove("USERID")
         mSharedPreferencesEditor.clear()
-        mSharedPreferencesEditor.apply()
-        textView.text=""
+        mSharedPreferencesEditor.apply()//commit()
+        //textView.text=""
+
+        renderParameters()
     }
 
     private fun renderParameters(){
@@ -66,6 +69,8 @@ class SPActivity : AppCompatActivity(),SharedPreferences.OnSharedPreferenceChang
     override fun onResume() {
         super.onResume()
         mSharedPreferences.registerOnSharedPreferenceChangeListener(this)
+
+        renderParameters()
     }
 
     override fun onPause() {
