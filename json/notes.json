@@ -1,0 +1,22 @@
+[
+    {
+        "objectId": "4539FF68-F7F7-58C0-FFCF-F93D63916800",
+        "title": "Enviar examen final",
+        "ownerId": null,
+        "description": "Enviar examen final y de rezagados a isil",
+        "created": 1510344038744,
+        "updated": null,
+        "___class": "Note",
+        "__meta": "{\"relationRemovalIds\":{},\"selectedProperties\":[\"objectId\",\"title\",\"ownerId\",\"description\",\"created\",\"updated\",\"___class\"],\"relatedObjects\":{}}"
+    },
+    {
+        "objectId": "6484C388-D7FF-65C9-FF1C-934062327900",
+        "title": "Subir notas",
+        "ownerId": null,
+        "description": "Subir notas de U2 y U3 en isil",
+        "created": 1510344329602,
+        "updated": null,
+        "___class": "Note",
+        "__meta": "{\"relationRemovalIds\":{},\"selectedProperties\":[\"objectId\",\"title\",\"ownerId\",\"description\",\"created\",\"updated\",\"___class\"],\"relatedObjects\":{}}"
+    }
+]
