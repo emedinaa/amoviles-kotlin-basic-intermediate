@@ -4,7 +4,7 @@ Curso de Aplicaciones Android con Kotlin (Básico - Intermedio) - Academia Móvi
 
 # Slides
 
-Lesson9-StoragOptions 
+Lesson9-StorageII
 
 # Lesson
 
