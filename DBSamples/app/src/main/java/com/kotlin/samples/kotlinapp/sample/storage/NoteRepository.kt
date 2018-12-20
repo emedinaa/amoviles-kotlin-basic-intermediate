@@ -14,7 +14,7 @@ class NoteRepository(val noteDatabase: NoteDatabase) {
         val cursor= sqliteDatabase.rawQuery(sql,null)
         if(cursor.moveToFirst()){
             do{
-                val note:Note= Note(cursor.getString(0).toInt(),
+                val note= Note(cursor.getString(0).toInt(),
                         cursor.getString(1),
                         cursor.getString(2))
                 notes.add(note)

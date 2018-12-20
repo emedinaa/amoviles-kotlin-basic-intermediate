@@ -27,8 +27,8 @@ class DBBasicActivity : AppCompatActivity() {
         val noteRepository= NoteRepository(NoteDatabase(this))
 
         //agregar paradero
-        /*noteRepository.addNote(Note(null,"Nota 1", "Nota 1"))
-        noteRepository.addNote(Note(null,"Nota 2", "Nota 2"))*/
+        //noteRepository.addNote(Note(null,"Nota 1", "Nota 1"))
+        //noteRepository.addNote(Note(null,"Nota 2", "Nota 2"))
 
 
         //listar paraderos
@@ -40,8 +40,13 @@ class DBBasicActivity : AppCompatActivity() {
 
         //eliminar paradero
         //noteRepository.deleteNote()
+        /*val dNote= Note(4,"Nota 2","Nota 2")
+        val row= noteRepository.deleteNote(dNote)
+        Log.v("CONSOLE", "row $row")*/
 
         //editar paradero
-        //noteRepository.updateNote()
+        /*val uNote= Note(3,"Nota 3","Desc Nota 3")
+        val row=noteRepository.updateNote(uNote)
+        Log.v("CONSOLE", "row update $row")*/
     }
 }

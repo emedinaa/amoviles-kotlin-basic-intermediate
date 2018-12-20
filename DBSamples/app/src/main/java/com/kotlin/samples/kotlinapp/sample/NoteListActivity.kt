@@ -21,6 +21,8 @@ class NoteListActivity : AppCompatActivity() {
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
         setupRepository()
         ui()
+
+        //loadNotes()
     }
 
     private fun ui(){

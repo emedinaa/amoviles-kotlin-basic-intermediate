@@ -3,6 +3,7 @@ package com.kotlin.samples.kotlinapp.sample.storage
 import android.content.Context
 import android.database.sqlite.SQLiteDatabase
 import android.database.sqlite.SQLiteOpenHelper
+import android.util.Log
 
 class NoteDatabase(context:Context):SQLiteOpenHelper(context, DATABASE_NAME,null, DATABASE_VERSION) {
 
@@ -16,6 +17,7 @@ class NoteDatabase(context:Context):SQLiteOpenHelper(context, DATABASE_NAME,null
                 + "${NoteTable.KEY_ID} INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL , ${NoteTable.KEY_NAME}  TEXT,"
                 + "${NoteTable.KEY_DESC} TEXT )")
 
+        Log.v("CONSOLE","sql $sql")
         db?.execSQL(sql)
     }
 
