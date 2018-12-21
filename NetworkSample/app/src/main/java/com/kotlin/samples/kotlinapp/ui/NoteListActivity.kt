@@ -72,7 +72,7 @@ class NoteListActivity : AppCompatActivity() {
             override fun onResponse(call: Call<NotesResponse>, response: Response<NotesResponse>) {
                 hideLoading()
                 response?.body()?.let {
-                    if(response.isSuccessful){
+                    if(response.isSuccessful){ //200
                         renderNotes(it.data)
                     }else{
                         showErrorMessage(response.errorBody()?.string())

@@ -22,3 +22,12 @@ class NotesResponse(status:Int?,val data:List<NoteEntity>?, msg:String?):BaseRes
 class UserResponse(status:Int?,val data:Any?, msg:String?):BaseResponse(status,msg)
 
 class UsersResponse(status:Int?,val data:List<UserEntity>?, msg:String?):BaseResponse(status,msg)
+
+
+
+
+
+
+
+
+
