@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:adjustViewBounds="true"
+        android:src="@drawable/ic_notepad128"
+        android:layout_alignParentTop="true"
+        android:id="@+id/iviLogo" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:id="@+id/eteUsername"
+            android:hint="admin@admin.com"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="169dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="Password"
+            android:ems="10"
+            android:id="@+id/etePassword"
+            android:imeOptions="actionDone"
+            android:layout_marginBottom="10dp"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Ingresar"
+            android:id="@+id/btnLogin"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp" />
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Registrar"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="40dp" />
+    </LinearLayout>
+    <include layout="@layout/layout_loading"/>
+</RelativeLayout>
