@@ -19,12 +19,15 @@ class MainActivity : AppCompatActivity() {
         setUpDb()
 
         //addNote
-        val note= NoteEntity(null,"Nota 4","Esta es una nota 4")
-        mDatabase.child("notes").setValue(note)
+        val noteId = mDatabase.child("notes").push().key
+        val note= NoteEntity(noteId,"Nota 8","Esta es una nota 8")
+        noteId?.let {
+            mDatabase.child("notes").child(noteId).setValue(note)
+        }
+
     }
 
     private fun setUpDb(){
-        //FirebaseApp.initializeApp(this)
         mDatabase= FirebaseDatabase.getInstance().reference
     }
 }
