@@ -7,7 +7,7 @@ import java.io.Serializable
 
 @Keep
 @IgnoreExtraProperties
-data class NoteEntity(val id:String?="",val name:String?="", val description:String?=""):Serializable{
+data class NoteEntity(val id:String?="",val name:String?="", val description:String?=""):Serializable {
 
     @Exclude
     fun toMap(): Map<String, Any?> {
