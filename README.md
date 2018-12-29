@@ -11,9 +11,9 @@ Lesson10 https://github.com/emedinaa/amoviles-kotlin-basic-intermediate/archive/
 
 ## Lesson
 
--  Patrón MVP
--  Runtime Permissions
--  Google Maps
+-  Patrón MVP https://github.com/emedinaa/amoviles-kotlin-basic-intermediate/blob/Lesson10-GMaps/android-mvp.md
+-  Runtime Permissions https://github.com/emedinaa/amoviles-kotlin-basic-intermediate/blob/Lesson10-GMaps/runtime-permissions.md
+-  Google Maps https://github.com/emedinaa/amoviles-kotlin-basic-intermediate/blob/Lesson10-GMaps/android-google-maps.md
 
 ## Resources 
 
