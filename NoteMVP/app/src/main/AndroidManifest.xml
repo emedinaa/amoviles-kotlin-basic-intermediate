@@ -31,6 +31,9 @@
         <activity android:name=".ui.AddNoteActivity" />
         <activity android:name=".ui.EditNoteActivity" />
         <activity android:name=".ui.LogInActivity">
+        </activity>
+
+        <activity android:name=".ui.LogInMVPActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

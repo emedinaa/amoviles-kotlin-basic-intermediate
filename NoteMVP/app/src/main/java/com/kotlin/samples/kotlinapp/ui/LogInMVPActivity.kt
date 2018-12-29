@@ -14,53 +14,31 @@ import retrofit2.Callback
 import retrofit2.Response
 import android.widget.Toast
 import com.kotlin.samples.kotlinapp.model.NoteEntity
+import com.kotlin.samples.kotlinapp.presenters.LogInPresenter
 import com.kotlin.samples.kotlinapp.storage.PreferencesHelper.saveSession
+import com.kotlin.samples.kotlinapp.ui.view.LogInView
 
 
-class LogInActivity : AppCompatActivity() {
+class LogInMVPActivity : AppCompatActivity(), LogInView {
 
+    private lateinit var presenter:LogInPresenter
     private var username: String? = null
     private var password: String? = null
 
-    private var call: Call<LogInResponse>?=null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_log_in)
+        presenter= LogInPresenter(this)
         //eventos
         btnLogin.setOnClickListener {
             if(validateForm()){
-                logIn()
+                presenter.logIn(username,password)
             }
         }
     }
 
-    private fun logIn(){
-        showLoading()
-        val logInRaw= LogInRaw(username,password)
-
-        call= NoteApiClient.build()?.logInBL(NoteConstant.APPLICATIONID, NoteConstant.RESTAPIKEY,logInRaw)
-        call?.enqueue(object : Callback<LogInResponse> {
-            override fun onFailure(call: Call<LogInResponse>, t: Throwable) {
-                hideLoading()
-                showMessage(t.message)
-            }
-
-            override fun onResponse(call: Call<LogInResponse>, response: Response<LogInResponse>) {
-                hideLoading()
-                response?.body()?.let {
-                    if(response.isSuccessful){
-                        saveSession(response.body())
-                        goToNoteList()
-                    }else{
-                        showMessage(response.errorBody()?.string())
-                    }
-                }
-            }
-        })
-    }
-
-    private fun saveSession(logInResponse: LogInResponse?){
+    override fun saveSession(logInResponse: LogInResponse?){
         logInResponse?.let {
             if(it.email!=null && it.token!=null){
                 PreferencesHelper.saveSession(this,it.email,it.token)
@@ -69,7 +47,6 @@ class LogInActivity : AppCompatActivity() {
     }
 
     //acciones de la vista
-
     private fun validateForm(): Boolean {
         username = eteUsername.text.toString()
         password = etePassword.text.toString()
@@ -85,21 +62,22 @@ class LogInActivity : AppCompatActivity() {
         return true
     }
 
-    private fun showMessage(message: String?) {
-        Toast.makeText(this@LogInActivity,
+    override fun showMessage(message: String?) {
+        Toast.makeText(this@LogInMVPActivity,
                 "LogIn $message", Toast.LENGTH_LONG).show()
     }
 
-    private fun goToNoteList(){
+    override fun hideLoading() {
+        flayLoading.visibility= View.GONE
+    }
+
+    override fun showLoading() {
+        flayLoading.visibility= View.VISIBLE
+    }
+
+    override fun goToNoteList() {
         val intent= Intent(this,NoteListActivity::class.java)
         startActivity(intent)
     }
 
-    private fun showLoading() {
-        flayLoading.visibility= View.VISIBLE
-    }
-
-    private fun hideLoading() {
-        flayLoading.visibility= View.GONE
-    }
 }
