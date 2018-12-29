@@ -1,4 +1,4 @@
-*Patrones y Arquitectura de aplicaciones móviles*
+## Patrones y Arquitectura de aplicaciones móviles*
 
 - Explicaremos un poco de las diferentes opciones de patrones y arquitecturas para el desarrollo de aplicaciones móviles.
 
@@ -17,3 +17,21 @@
     - Los fragments y las activities son Views ?, estrictamente hablando no, yo puedo crear un interface que represente lo que va a realizar una vista. La idea es trabajar con la interface y no directamente con el fragment o activity.
 
 - Presenter : Este elemento va tener la lógica , se comunica con el módelo. Recibe los cambios del modelo y actualiza la vista. Se comporta como controlador de las vistas.
+
+
+## Referencias
+
+ - Principios S.O.L.I.D https://academy.realm.io/posts/learning-path-solid-principles-for-android/
+
+ - Android Architecture Blueprints https://github.com/googlesamples/android-architecture
+
+ - MVP Pattern (Microsoft) https://msdn.microsoft.com/en-us/library/ff649571.aspx
+
+ - GUI Architectures (Martin Fowler) https://martinfowler.com/eaaDev/uiArchs.html
+
+ - MVC, MVP , MVVM (Realm) https://academy.realm.io/posts/eric-maxwell-mvc-mvp-and-mvvm-on-android/
+
+ - Ejemplo MVP
+ https://github.com/emedinaa/android-mvp
+ 
+ - Clean Architecture https://docs.google.com/presentation/d/1Eg2V_0j0UO1V3gvYBMYomsMjS9cxD-p-CldPB68ZQxs/edit?usp=sharing
