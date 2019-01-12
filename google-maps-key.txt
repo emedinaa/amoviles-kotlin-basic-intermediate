@@ -1,0 +1,12 @@
+
+keytool -list -v -keystore mystore.keystore
+
+
+keytool -list -v -keystore /Users/emedinaa/.android/debug.keystore
+
+password: android
+
+AIzaSyDLHAWHn-cAQWzs4zKzNxeFp8uRyiL1bSE
+
+
+-12.088915,-77.0365457,17z

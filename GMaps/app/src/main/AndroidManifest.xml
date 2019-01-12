@@ -2,8 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.kotlin.samples.kotlinapp">
 
-    <!-- This app requires location permissions for the layers demo.
-The user's current location is displayed using the 'My Location' layer. -->
+    <!--
+This app requires location permissions for the layers demo.
+The user's current location is displayed using the 'My Location' layer.
+    -->
     <!-- Access to location is needed for the UI Settings Demo -->
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
@@ -17,6 +19,7 @@ The user's current location is displayed using the 'My Location' layer. -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
+
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -25,18 +28,25 @@ The user's current location is displayed using the 'My Location' layer. -->
             </intent-filter>
         </activity>
         <activity android:name=".BasicMapDemoActivity" />
-        <activity android:name=".CameraDemoActivity"/>
+        <activity android:name=".CameraDemoActivity" />
         <activity android:name=".CircleDemoActivity" />
         <activity android:name=".CloseInfoWindowDemoActivity" />
-        <activity android:name=".LayersDemoActivity"/>
+        <activity android:name=".LayersDemoActivity" />
         <activity android:name=".LiteListDemoActivity" />
-        <activity android:name=".MarkerDemoActivity"/>
-        <activity android:name=".PolygonDemoActivity"/>
-        <activity android:name=".PolylineDemoActivity"/>
+        <activity android:name=".MarkerDemoActivity" />
+        <activity android:name=".PolygonDemoActivity" />
+        <activity android:name=".PolylineDemoActivity" />
         <activity android:name=".StreetViewPanoramaNavigationDemoActivity" />
-        <activity android:name=".TagsDemoActivity"/>
+        <activity android:name=".TagsDemoActivity" />
         <activity android:name=".UiSettingsDemoActivity" />
-        <activity android:name=".VisibleRegionDemoActivity"/>
+        <activity android:name=".VisibleRegionDemoActivity" />
+        <activity android:name=".GMapActivity">
+            <!--<intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>-->
+        </activity>
     </application>
 
 </manifest>
