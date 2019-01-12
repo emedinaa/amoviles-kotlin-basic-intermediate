@@ -7,6 +7,7 @@ import com.kotlin.samples.kotlinapp.R
 import kotlinx.android.synthetic.main.layout_loading.*
 import android.R.attr.password
 import android.content.Intent
+import android.util.Log
 import com.kotlin.samples.kotlinapp.storage.*
 import kotlinx.android.synthetic.main.activity_log_in.*
 import retrofit2.Call
@@ -15,6 +16,7 @@ import retrofit2.Response
 import android.widget.Toast
 import com.kotlin.samples.kotlinapp.model.NoteEntity
 import com.kotlin.samples.kotlinapp.storage.PreferencesHelper.saveSession
+import com.kotlin.samples.kotlinapp.utils.NLog
 
 
 class LogInActivity : AppCompatActivity() {
@@ -75,6 +77,8 @@ class LogInActivity : AppCompatActivity() {
     private fun showMessage(message: String?) {
         Toast.makeText(this@LogInActivity,
                 "LogIn $message", Toast.LENGTH_LONG).show()
+        //Log.v("CONSOLE", "$message")
+        NLog.v(message)
     }
 
     private fun validateForm(): Boolean {

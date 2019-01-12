@@ -2,6 +2,7 @@ package com.kotlin.samples.kotlinapp.ui
 
 import android.os.Bundle
 import android.support.annotation.Nullable
+import android.util.Log
 import com.google.android.gms.maps.*
 import com.kotlin.samples.kotlinapp.R
 import com.kotlin.samples.kotlinapp.model.entity.Warike
@@ -47,11 +48,11 @@ GoogleMap.OnMarkerClickListener, GoogleMap.OnInfoWindowClickListener {
         googleMap?.setOnMarkerClickListener(this)
         googleMap?.setOnInfoWindowClickListener(this)
         //googleMap?.addMarker(MarkerOptions().position(LatLng(0.0, 0.0)).title("Marker"))
+        retrievePlaces()
     }
 
     override fun onResume() {
         super.onResume()
-        retrievePlaces()
     }
 
     private fun renderPlaces() {
@@ -60,12 +61,14 @@ GoogleMap.OnMarkerClickListener, GoogleMap.OnInfoWindowClickListener {
         if(places.isEmpty()){
             googleMap?.animateCamera(CameraUpdateFactory.newLatLngZoom(LatLng(defaultLat,defaultLng),10f))
         }else{
-            val padding =20
+            val padding =40
             val builder:LatLngBounds.Builder  =  LatLngBounds.Builder()
             for (warike in places) {
                 marker = buildMarker(warike)
                 warikeHashMap[marker] = warike
                 builder.include(LatLng(warike.lat,warike.lng))
+
+                Log.v("CONSOLE","lat : ${warike.lat} lng : ${warike.lng}   ")
             }
             val bounds:LatLngBounds  = builder.build()
             googleMap?.animateCamera(CameraUpdateFactory.newLatLngBounds(bounds,padding))

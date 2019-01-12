@@ -8,13 +8,13 @@ object NLog {
 
     private val TAG = "CONSOLE"
 
-    fun v(message: String) {
+    fun v(message: String?) {
         if (BuildConfig.DEBUG) {
             Log.v(TAG, message)
         }
     }
 
-    fun d(message: String) {
+    fun d(message: String?) {
         if (BuildConfig.DEBUG) {
             Log.d(TAG, message)
         }

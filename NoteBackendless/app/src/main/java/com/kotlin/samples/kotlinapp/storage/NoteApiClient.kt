@@ -2,7 +2,6 @@ package com.kotlin.samples.kotlinapp.storage
 
 import com.kotlin.samples.kotlinapp.BuildConfig
 import com.kotlin.samples.kotlinapp.model.NoteEntity
-import com.kotlin.samples.kotlinapp.model.UserEntity
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Call

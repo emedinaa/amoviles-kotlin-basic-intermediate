@@ -23,6 +23,7 @@ android {
         debug {
             buildConfigField("String", "HOST", props['hostDev'])
             buildConfigField("String", "GA", props['gaKey'])
+
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'),
                     'proguard-rules.pro'
@@ -31,10 +32,10 @@ android {
         release {
             buildConfigField("String", "HOST", props['host'])
             buildConfigField("String", "GA", props['gaKey'])
+
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
-
     }
 
     sourceSets {
