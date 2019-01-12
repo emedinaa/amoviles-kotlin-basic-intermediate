@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="def_pad">10dp</dimen>
+    <dimen name="def_marg">12dp</dimen>
+    <dimen name="font12">12sp</dimen>
+    <dimen name="font14">14sp</dimen>
+    <dimen name="font16">16sp</dimen>
+    <dimen name="font18">18sp</dimen>
+</resources>
