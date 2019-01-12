@@ -1,5 +1,6 @@
 package com.kotlin.samples.kotlinapp.storage
 
+import com.kotlin.samples.kotlinapp.BuildConfig
 import com.kotlin.samples.kotlinapp.model.NoteEntity
 import com.kotlin.samples.kotlinapp.model.UserEntity
 import okhttp3.OkHttpClient
@@ -13,12 +14,12 @@ import retrofit2.http.DELETE
 
 object NoteApiClient {
 
-    private const val API_BASE_URL = "https://api.backendless.com/"
+    //private const val API_BASE_URL = "https://api.backendless.com/"
     private var servicesApiInterface:ServicesApiInterface?=null
 
     fun build():ServicesApiInterface?{
         var builder: Retrofit.Builder = Retrofit.Builder()
-                .baseUrl(API_BASE_URL)
+                .baseUrl(BuildConfig.HOST)//API_BASE_URL)
                 .addConverterFactory(GsonConverterFactory.create())
 
         var httpClient: OkHttpClient.Builder = OkHttpClient.Builder()

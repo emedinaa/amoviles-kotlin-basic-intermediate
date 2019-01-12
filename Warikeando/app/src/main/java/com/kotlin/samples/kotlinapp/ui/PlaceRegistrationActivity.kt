@@ -123,7 +123,7 @@ class PlaceRegistrationActivity : BaseActivity() {
         if(requestCode== 200){
             if (resultCode == Activity.RESULT_OK) {
                 lat= data?.getDoubleExtra("USER_LAT",0.0)?:0.0
-                lat= data?.getDoubleExtra("USER_LNG",0.0)?:0.0
+                lng= data?.getDoubleExtra("USER_LNG",0.0)?:0.0
                 textViewLocation.text="Lat : $lat Lng : $lng"
             }
         }
