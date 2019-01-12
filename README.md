@@ -1,4 +1,4 @@
-# Lesson 10 - Wednesday, December 29
+# Lesson 11 - Saturday, January 12
 
 Curso de Aplicaciones Android con Kotlin (Básico - Intermedio) - Academia Móviles
 
@@ -7,7 +7,7 @@ Curso de Aplicaciones Android con Kotlin (Básico - Intermedio) - Academia Móvi
 
 # Lesson
 
-Lesson10 https://github.com/emedinaa/amoviles-kotlin-basic-intermediate/archive/Lesson10-GMaps.zip
+Lesson11 https://github.com/emedinaa/amoviles-kotlin-basic-intermediate/archive/Lesson11-GPlay.zip
 
 ## Lesson
 
